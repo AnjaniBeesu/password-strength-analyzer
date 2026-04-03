@@ -1,8 +1,6 @@
-# 🔐 Password Strength Analyzer
-
+# PASSWORD STRENGTH ANALYZER
 A Python GUI-based application that evaluates password strength using multiple validation rules.
-
-## 🚀 Features
+## FEATURES
 - Real-time password strength analysis
 - Checks for:
   - Length
@@ -11,11 +9,9 @@ A Python GUI-based application that evaluates password strength using multiple v
   - Special characters
 - Interactive GUI (Tkinter)
 - Dark-themed interface
-
-## 🛠️ Tech Stack
+## TECH STACK
 - Python
 - Tkinter
-
-## ▶️ How to Run
+## HOW TO RUN:
 ```bash
 python password_gui.py
