@@ -69,7 +69,6 @@ entry = tk.Entry(
     insertbackground="white"
 )
 entry.pack(pady=10)
-
 # Button
 check_button = tk.Button(
     window,
@@ -83,10 +82,8 @@ check_button = tk.Button(
     pady=5
 )
 check_button.pack(pady=10)
-
 check_button.bind("<Enter>", on_enter)
 check_button.bind("<Leave>", on_leave)
-
 # Result
 result_label = tk.Label(
     window,
@@ -95,5 +92,4 @@ result_label = tk.Label(
     fg="white"
 )
 result_label.pack(pady=10)
-
 window.mainloop()
