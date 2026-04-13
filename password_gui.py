@@ -1,23 +1,16 @@
 import tkinter as tk
-
 def check_password():
     password = entry.get()
-
     if " " in password:
         result_label.config(text="❌ No spaces allowed", fg="red")
         return
-
     length = len(password)
-
     has_upper = any(char.isupper() for char in password)
     has_lower = any(char.islower() for char in password)
     has_digit = any(char.isdigit() for char in password)
-
     special_chars = "!@#$%^&*()-_=+[]{}|;:',.<>?/"
     has_special = any(char in special_chars for char in password)
-
     score = 0
-
     if length >= 8:
         score += 1
     if has_upper:
