@@ -21,28 +21,21 @@ def check_password():
         score += 1
     if has_special:
         score += 1
-
     if score <= 2:
-        strength = "Weak ❌"
+        strength = "Weak "
         color = "red"
     elif score == 3 or score == 4:
-        strength = "Medium ⚠️"
+        strength = "Medium "
         color = "orange"
     else:
-        strength = "Strong ✅"
+        strength = "Strong "
         color = "green"
-
     result_label.config(text=f"Strength: {strength}", fg=color)
-
-
 # Hover effects
 def on_enter(e):
     check_button.config(bg="#a855f7")
-
 def on_leave(e):
     check_button.config(bg="#7c3aed")
-
-
 # Window setup
 window = tk.Tk()
 window.title("Password Strength Checker")
